@@ -1,0 +1,90 @@
+/* Default styles for desktop */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Menghapus margin default */
+    padding: 0;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #393E46;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+header, footer {
+    width: auto; /* Memastikan elemen mencakup seluruh lebar viewport */
+    margin: 0; /* Menghapus margin default */
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222831;
+    color: #fff;
+}
+
+footer {
+    position: relative; /* Pastikan footer berada di bawah konten */
+    bottom: -200px; /* Mengatur posisi footer */
+    width: 100%; /* Memastikan footer mencakup seluruh lebar halaman */
+    background-color: #222831;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+#profile img {
+    border: 5px solid #fff; /* Warna garis */
+    padding: 5px; /* Jarak antara gambar dan garis */
+    border-radius: 50%; /* Membuat garis mengikuti bentuk lingkaran */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+#skills {
+    text-align: center; /* Memusatkan konten di dalam section */
+}
+
+#skills ul {
+    /* baca untuk sisi ini untuk kamu gunakan sebagai bahan diskusi, jangan lupa gunakan AI asisten untuk membantu kamu */
+    list-style-type: none; /* Menghilangkan titik di depan elemen li */
+    column-count: 2; /* Membagi daftar menjadi 2 kolom */
+    column-gap: 20px; /* Jarak antar kolom */
+    padding: 0;
+    list-style-position: inside; /* Menjaga posisi teks di dalam kolom */
+}
+
+#skills ul li {
+    margin: 5px 0; /* Memberikan jarak antar item */
+    padding: 5px; /* Memberikan ruang di dalam item */
+    background-color: #222831; /* Warna latar belakang untuk setiap item */
+    color: #fff; /* Warna teks */
+    border-radius: 5px; /* Membuat sudut item menjadi melengkung */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header, footer {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        font-size: 14px;
+    }
+}
